@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<title>Welcome</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+  
+  /* CSS variables*/
+  :root 
+  {
+   --primary-color: #b90415;
+   --primary-color-hover: #d3071b;
+   --secondary-color: #103063;
+   --secondarycolor: #143f85;
+   --light-color: #f4f4f4s;
+   }
+
+ 
+body 
+{
+  font-family: 'PT Sans ', sans-serif;
+  background-color: #252529;
+  color:white;
+  line-height:1.6;
+  margin: 0;
+}
+
+img 
+{
+ width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:#ccc;
+  }
+
+}
+/* section */
+.section {
+ padding: 2rem 0;
+ }
+ 
+ .section-head {
+   font-size: 2.5rem;
+   margin: 0;
+   }
+   
+ .section h3{
+  font-size: 2rem;
+  }
+
+  section#entertainment
+  {
+   background-image: url("fourth.jpg");
+   padding: 10rem 0;
+  
+  }
+
+  .gift-cards{
+  display: grid;
+  grid-gap:28px;
+  grid-template-columns: 1fr 1fr;
+  text-align:left;
+  }
+ 
+ 
+ 
+/*showcase*/
+#showcase
+{
+ margin:0;
+ padding:0;
+background-image: url("ms2.jpg") ;
+width: 100%;
+height:100vh;
+position:relative;
+overflow-y:hidden;
+}
+
+#showcase .container
+{
+ margin-top: 25vh;
+}
+
+#showcase h1{
+font-size:4rem;
+margin-bottom:0;
+}
+
+#showcase h2{
+font-size:2rem;
+}
+
+/* footer */
+
+footer .footer-cols
+{
+ display: grid;
+ grid-gap: 20px;
+ grid-template-columns: repeat(4,1fr);
+ padding: 2rem;
+ text-align: left;
+ font-size: 14px;
+}
+
+footer .footer-cols ul{
+ list-style: none;
+}
+
+footer .footer-cols ul li:first-child{
+ font-size: 1.2rem;
+ padding-bottom:0.5rem;
+ border-bottom:#444 solid 1px;
+ margin-bottom:1 rem;
+ }
+ 
+ footer .footer-bottom{
+  background:#333;
+  padding:1rem;
+  }
+ 
+ 
+/* utility classes */
+.container
+{
+max-width:1180px;
+text-align:center;
+margin:0 auto;
+padding: 0 3rem;
+}
+
+.lead{
+font-size:1.3rem;
+}
+
+.text-center{
+ text-align:center;
+}
+
+/* buttons */
+.btn {
+ padding:1rem;
+ color:white;
+ display:inline-block;
+}
+
+.btn-primary {
+ background: var(--primary-color);
+ }
+ 
+ .btn-primary:hover {
+ background: var(--primary-color-hover);
+ }
+ 
+ .btn-secondary {
+ background: var(--secondary-color);
+ }
+ 
+ .btn-secondary:hover {
+ background: var(--secondary-color-hover);
+ }
+ 
+
+ /* text colors */
+
+.text-primary{
+ color:var(--primary-color);
+ }
+ 
+.text-secondary{
+ color:var(--secondary-color);
+ }
+ 
+.text-light{
+color:var(--light-color);
+}
+
+.bg-light
+{ 
+ background-color:white;
+ color:#333;
+}
+ 
+.mb{
+margin-bottom:1rem;
+}
+
+.mt{
+margin-top:1rem;
+}
+
+/* Navigation*/
+nav 
+{
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position:fixed;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  
+  .hide-on-small{
+  display: none;
+  }
+  
+  #showcase  {
+  height:50vh;
+  }
+  
+  #showcase .container{
+  margin-top: 15vh;
+  }
+  
+  #showcase h1{
+  font-size: 3rem;
+  }
+  
+  #showcase h2{
+   font-size: 1.5rem;
+   }
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover 
+  {
+    background: #444;
+  }
+  nav a#openup:after 
+  {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup 
+  {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+
+@media screen and (max-width: 780px) 
+{
+  .gift-cards 
+  {
+   grid-template-columns: 1fr;
+  }
+   
+   footer .footer-cols
+   {
+    display:none;
+   }
+}
+
+@media screen and (max-width: 580px) 
+{
+  #showcase p.lead 
+  {
+   display: none;
+  }
+}
+
+
+</style>
+<body>
+
+<!-- showcase -->
+<div id="showcase">
+ <header>
+   <nav class='cf'>
+     <ul class='cf'>
+	   <li class="hide-on-small">
+	     <a href="#showcase">My Tunes</a>
+	   </li>
+	   <li>
+	     <a href="#">Overview</a>
+	   </li>
+	   <li>
+	     <a href="#music">Music</a>
+	   </li>
+	   <li>
+	     <a href="#video">Video</a>
+	   </li>
+	   <li>
+	     <a href="#entertainment">Entertainment</a>
+	   </li>
+	   <li>
+	     <a href="#gift-cards">gift-cards</a>
+	   </li>
+	   </ul>
+	   <a href='#' id='openup'>my Tunes</a>
+	  </nav>
+ 
+ </header>
+ 
+ <div class="section-main container">
+  <h1>my Tunes.</h1>
+  <h2>Your music,movies, and TV shows take center stage.</h2>
+  <p class="lead hide-on-small">
+  myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have and shop
+  for the ones you want.Enjoy all the entertainment itunes has to offer on your Mac and PC.
+  </p>
+  </div>
+  </div>
+
+
+<!--music -->
+<section id="music" class="section">
+  <div class="container">
+   <h2 class="section-head">
+     <i class="fas fa-music"></i>Music
+   </h2>
+   <h3>45 million songs. Zero ads </h3>
+   <p class="lead"> Stream over 45 million songs,ad-free.or download albums and tracks to listen offline .
+   all the music in your personal myTunes library-no matter where it comes from - lives right along the
+   orange Music catalog.start your free three-month trial with no commitment.</p>
+   
+   <a href="#" class="btn btn-primary mb">Start Your Trial Now</a>
+   <p class="text-light">Orange Music is available in myTunes, and for iOS and Android devices.</p>
+   <img src="app.jpg" alt="">   
+   </div>
+</section>
+
+
+<!-- video-->
+
+ <section id="video" class="section bg-light">
+   <div class="container">
+     <h3>The Movie and Tv collection you always wished for,Granted.</h3>
+	 <p class="lead">With over 100,000 movies to choose from, there’s always something great to watch on iTunes.
+	 1 And if you watch on Apple TV 4K, you’ll be able to enjoy a tremendous selection of your favourite
+	 content in 4K HDR. So get ready to enjoy the hit movies you’ve been waiting to see — anytime, anywhere.
+	 Just tap to play or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+	 <a href="#" class="btn btn-secondary mb">Read More</a>
+	 <img src="third.jpg" alt="">
+   </div>
+ 
+ </section>
+
+<!-- Entertainment -->
+
+<section id="entertainment" class="section">
+  <div class="container">
+    <h3>A world of entertainment.Available wherever you are.</h3>
+    <p class="lead">The iTunes Store is available on all your devices, which means 
+	you can buy that catchy song you just heard or rent that movie you’ve been meaning to see, 
+	anytime you want. All the music and movies you buy are immediately available, no matter how you 
+	want to play them.
+	</p>
+  </div>
+</section>
+
+<!-- gift cards -->
+  <section id="gift-cards" class="section bg-light">
+   <div class="container">
+    <div class="gift-cards">
+	 <div>
+	  <img src="card.jpg" alt="">
+	 </div>
+	 <div>
+	  <h2>Gift Cards</h2>
+	  <p>*New subscribers only. Plan automatically renews with subscription charges after trial.
+Refers to the total number worldwide. Not all content is available in all countries or regions.
+Available on iTunes. Title availability is subject to change.</p>
+	 </div>
+	 </div>
+   </div>
+   </section>
+   
+   <!-- footer -->
+   <footer>
+   <div class="container">
+    <div class="footer-cols">
+	  <ul>
+	    <li>Shop & learn</li>
+		<li>
+		 <a href="#">Music</a>
+		</li>
+		<li>
+		 <a href="#">Movies</a>
+		</li>
+		<li>
+		 <a href="#">Shows</a>
+		</li>
+		<li>
+		 <a href="#">Apps</a>
+		</li>
+	  </ul>
+	  
+	  <ul>
+	    <li>Orange Store</li>
+		<li>
+		 <a href="#">Find a store</a>
+		</li>
+		<li>
+		 <a href="#">Today at orange</a>
+		</li>
+		<li>
+		 <a href="#">Orange camp</a>
+		</li>
+		<li>
+		 <a href="#">Financing</a>
+		</li>
+	  </ul>
+	  
+	   <ul>
+	    <li>Education and Business</li>
+		<li>
+		 <a href="#">Orange & education</a>
+		</li>
+		<li>
+		 <a href="#">Show for College</a>
+		</li>
+		<li>
+		 <a href="#">Shop for Business</a>
+		</li>
+		<li>
+		 <a href="#">Jobs</a>
+		</li>
+	  </ul>
+	  
+	   <ul>
+	    <li>About Orange </li>
+		<li>
+		 <a href="#">Newsroom</a>
+		</li>
+		<li>
+		 <a href="#">Orange Leadership</a>
+		</li>
+		<li>
+		 <a href="#">Investors</a>
+		</li>
+		<li>
+		 <a href="#">Events</a>
+		</li>
+		<li>
+		 <a href="#">Contact</a>
+		</li>
+	  </ul>
+	</div>
+	
+   </div>
+   <div class="footer-bottom text-center">
+	  Copyright &copy: 2019 Orange myTunes
+   </div>
+   </footer>
+
+<script
+  src="http://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+ $(function() {
+	menu = $('nav ul');
+
+  $('#openup').on('click', function(e) {
+    e.preventDefault(); menu.slideToggle();
+  });
+  
+  $(window).resize(function(){
+    var w = $(this).width(); if(w > 480 && menu.is(':hidden')) {
+      menu.removeAttr('style');
+    }
+  });
+  
+  $('nav li').on('click', function(e) {                
+    var w = $(window).width(); if(w < 480 ) {
+      menu.slideToggle(); 
+    }
+  });
+  $('.open-menu').height($(window).height());
+});
+
+//Smooth Scrolling
+$('.cf a').on('click', function(event) {
+
+  if(this.hash !== ''){
+   event.PreventDefault();
+   
+   const hash = this.hash;
+   
+   $('html, body').animate(
+   {
+    scrollTop:$(hash).offset().top
+   },
+   800,
+   function() {
+    window.location.hash = hash;
+	}
+	
+	};
+	}
+	});
+   
+</script>
+</body>
+</html>
